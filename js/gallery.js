@@ -87,10 +87,10 @@ function createGalleryItems(images) {
 
 galleryContainer.innerHTML = createGalleryItems(images);
 
-galleryContainer.addEventListener('click', (event) => {
-  event.preventDefault();
+galleryContainer.addEventListener('click', e => {
+  e.preventDefault();
 
-  const target = event.target;
+  const target = e.target;
 
   if (target.nodeName !== 'IMG') return;
 
